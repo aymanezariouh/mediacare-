@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Médecins - Clinique Santé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/newlogo1.png" alt="Logo Clinique Santé">
+      </div>
+      <div class="menu">
+        <a href="./index.html">Accueil</a>
+        <a href="./medcins.html">Médecins</a>
+        <a href="./rendez-vous.htm">Rendez-vous</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="search-section">
+    <div class="search-filter-group">
+      <div class="search-container">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder=" Rechercher un médecin ou une spécialité..."
+          aria-label="Rechercher un médecin"
+        >
+      </div>
+      <div class="filter-container">
+        <select id="categoryFilter" aria-label="Filtrer par catégorie">
+          <option value="all">Toutes les spécialités</option>
+          <option value="Cardiologue">Cardiologue</option>
+          <option value="Dermatologue">Dermatologue</option>
+          <option value="Dentiste">Dentiste</option>
+          <option value="Pédiatre">Pédiatre</option>
+          <option value="Neurologue">Neurologue</option>
+          <option value="Ophtalmologue">Ophtalmologue</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctors" id="medecins">
+    <h2 class="section-title">Nos Médecins</h2>
+    <div class="doctors-grid">
+      <div class="doctor" data-name="Dr. Karim" data-specialty="Cardiologue">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Karim</h3>
+        <p>Cardiologue</p>
+      </div>
+      <div class="doctor" data-name="Dr. Leila" data-specialty="Dermatologue">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Leila</h3>
+        <p>Dermatologue</p>
+      </div>
+      <div class="doctor" data-name="Dr. Sami" data-specialty="Dentiste">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Sami</h3>
+        <p>Dentiste</p>
+      </div>
+      <div class="doctor" data-name="Dr. Amina" data-specialty="Pédiatre">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Amina</h3>
+        <p>Pédiatre</p>
+      </div>
+      <div class="doctor" data-name="Dr. Youssef" data-specialty="Neurologue">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Youssef</h3>
+        <p>Neurologue</p>
+      </div>
+      <div class="doctor" data-name="Dr. Fatima" data-specialty="Ophtalmologue">
+        <div class="doctor-icon"><img src="./doctore!.webp" alt=""></div>
+        <h3>Dr. Fatima</h3>
+        <p>Ophtalmologue</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <p>123 Avenue de la Santé<br>75015 Paris, France</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <p>+33 1 45 67 89 10</p>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <p>contact@cliniquesante.fr</p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Horaires</h3>
+        <p>Lun-Ven: 8h-20h</p>
+        <p>Samedi: 9h-18h</p>
+        <p>Urgences: 24h/24</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Accès</h3>
+        <p>Métro: Ligne 12 (Volontaires)</p>
+        <p>Bus: 39, 70, 80</p>
+        <p>Parking gratuit</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Clinique Santé. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

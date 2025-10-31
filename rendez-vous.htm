@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/newlogo1.png" alt="Logo Clinique Santé">
+      </div>
+      <div class="menu">
+        <a href="./index.html">Accueil</a>
+        <a href="./medcins.html">Médecins</a>
+        <a href="./rendez-vous.htm">Rendez-vous</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+      </button>
+    </nav>
+  </header>
+   <section class="form" id="rendez-vous">
+    <h2>Prendre un Rendez-vous</h2>
+    <form id="appointmentForm">
+      <input type="text" id="name" placeholder="Votre nom" required>
+      <input type="email" id="email" placeholder="Votre email" required>
+      <input type="date" id="date" required>
+      <select id="doctorSelect" required>
+        <option value="">Choisir un médecin</option>
+        <option>Dr. Karim - Cardiologue</option>
+        <option>Dr. Leila - Dermatologue</option>
+        <option>Dr. Sami - Dentiste</option>
+        <option>Dr. Amina - Pédiatre</option>
+        <option>Dr. Youssef - Neurologue</option>
+        <option>Dr. Fatima - Ophtalmologue</option>
+      </select>
+      <button type="submit">Confirmer le Rendez-vous</button>
+    </form>
+    <ul id="appointmentList"></ul>
+  </section>
+
+  <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <p>123 Avenue de la Santé<br>75015 Paris, France</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <p>+33 1 45 67 89 10</p>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <p>contact@cliniquesante.fr</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Horaires</h3>
+                <p>Lun-Ven: 8h-20h</p>
+                <p>Samedi: 9h-18h</p>
+                <p>Urgences: 24h/24</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Accès</h3>
+                <p>Métro: Ligne 12 (Volontaires)</p>
+                <p>Bus: 39, 70, 80</p>
+                <p>Parking gratuit</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Clinique Santé. Tous droits réservés.</p>
+        </div>
+    </footer>
+   <script src="script.js"></script>
+    
+</body>
+</html>
