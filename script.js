@@ -90,44 +90,43 @@ const doctorCards = document.querySelectorAll('.doctor');
 
 if (searchInput && categoryFilter && doctorCards.length > 0) {
   
-  // Fonction de filtrage principale
+
   function filterDoctors() {
     const searchTerm = searchInput.value.toLowerCase().trim();
-    const selectedCategory = categoryFilter.value; // Récupère la catégorie sélectionnée
+    const selectedCategory = categoryFilter.value;
     
     doctorCards.forEach(card => {
       const doctorName = card.getAttribute('data-name').toLowerCase();
       const doctorSpecialty = card.getAttribute('data-specialty');
       
-      // 1. Filtrage par recherche (nom ou spécialité)
+      
       const matchesSearch = doctorName.includes(searchTerm) || 
                            doctorSpecialty.toLowerCase().includes(searchTerm);
       
-      // 2. Filtrage par catégorie
-      // La carte correspond si la catégorie est "all" OU si la spécialité du docteur correspond à la catégorie sélectionnée
+     
       const matchesCategory = selectedCategory === 'all' || 
                               doctorSpecialty === selectedCategory;
       
-      // La carte est affichée si elle correspond aux DEUX critères
+
       const shouldShow = matchesSearch && matchesCategory;
       
       if (shouldShow) {
         card.classList.remove('hidden');
-        // Réappliquer l'animation pour un effet de réapparition
+
         card.style.animation = 'none';
-        card.offsetHeight; /* force reflow */
+        card.offsetHeight; 
         card.style.animation = 'fadeIn 0.5s ease-in-out';
       } else {
         card.classList.add('hidden');
-        card.style.animation = 'none'; // Supprimer l'animation pour les cartes cachées
+        card.style.animation = 'none'; 
       }
     });
   }
 
-  // Écouteurs d'événements
+
   searchInput.addEventListener('input', filterDoctors);
-  categoryFilter.addEventListener('change', filterDoctors); // Écouteur pour le changement de catégorie
+  categoryFilter.addEventListener('change', filterDoctors); 
   
-  // Initialiser le filtre au chargement
+
   filterDoctors();
 }

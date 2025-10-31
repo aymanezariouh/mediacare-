@@ -284,21 +284,21 @@ body.dark-mode .theme-toggle .moon-icon {
   background: var(--background-color);
 }
 
-/* NOUVEAUX STYLES POUR LE GROUPE RECHERCHE ET FILTRE */
+
 .search-filter-group {
-  max-width: 1000px; /* Augmenter la largeur pour accommoder le filtre */
+  max-width: 1000px; 
   margin: 0 auto;
   display: flex;
-  gap: 20px; /* Espace entre la barre de recherche et le filtre */
-  padding: 0 20px; /* Ajouter un peu de padding sur les côtés */
+  gap: 20px; 
+  padding: 0 20px;
 }
 
 .search-container {
-  flex-grow: 1; /* Permet à la barre de recherche de prendre l'espace restant */
+  flex-grow: 1; 
 }
 
 .filter-container {
-  width: 300px; /* Largeur fixe pour le filtre */
+  width: 300px; 
 }
 
 #searchInput {
